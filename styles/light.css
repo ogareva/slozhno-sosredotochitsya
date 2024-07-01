@@ -9,7 +9,11 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --bg-image: url(../images/cover-image-light.png);
+  background-image: url(/images/cover-image-light.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   --text-color:#353430;
   --title-color:rgba(255, 194, 230, 1);
   --title-h2-color:rgba(53, 52, 48, 1);
@@ -17,8 +21,25 @@
   --bg-color:rgba(53, 52, 48, 1);
   --border-corner:rgba(53, 52, 48, 1);
   --accent-color:rgba(255, 141, 203, 1);
-  
 }
-:root.page.theme_light {
-  --bg-image: url(../images/cover-image-light.png);
+
+@media (prefers-color-scheme: light) {
+
+  .page {
+    background-image: url(/images/cover-image-light.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    --text-color:#353430;
+    --title-color:rgba(255, 194, 230, 1);
+    --title-h2-color:rgba(53, 52, 48, 1);
+    --shadow-color:rgba(255, 141, 203, 1);
+    --bg-color:rgba(53, 52, 48, 1);
+    --border-corner:rgba(53, 52, 48, 1);
+    --accent-color:rgba(255, 141, 203, 1);
+  }
+
+  .decorated-zone-rec {
+    display: none;
+  }
 }

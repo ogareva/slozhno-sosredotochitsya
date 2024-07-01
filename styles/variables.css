@@ -10,18 +10,6 @@
   --shadow-color: #ff0070;
   --accent-color: #ff0070;
   --bg-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
   --title-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   --border-corner:rgba(255, 0, 112, 1);
-}
-@import url(../fonts/fonts.css);
-.subtitle {
-  color: var(--subtitle-text-color);
-  background-color: var(--accent-color);
-  font-family: 'IBM Plex mono', sans-serif;
-  display: block;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0%;
-  text-align: left;
 }
